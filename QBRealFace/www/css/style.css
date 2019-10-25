@@ -1,0 +1,36 @@
+
+
+video {
+    -webkit-transform: scaleY(1) !important;
+    transform: scaleY(1) !important;
+    background-color: transparent;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+#localVideo {
+  position: absolute;
+  z-index: 100 !important;
+}
+
+#localVideo.active {
+  opacity: 1;
+  z-index: 100 !important;
+}
+
+#main_video {
+  display: block;
+  object-fit: cover;  /* no letterboxing */
+  position: absolute;
+  z-index: -1;
+}
+	
+#main_video.active {
+  opacity: 1;
+  z-index: -1;
+}
+
+
+
